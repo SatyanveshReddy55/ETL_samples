@@ -1,0 +1,33 @@
+event_types:
+  input:
+    schema : {
+          "timestamp": "Timestamp",
+          "p_Up": "int",         
+          "records":[
+            {
+              "id": "int",
+              "value": "Float"
+            }
+          ]
+          }
+    start_time: '2024-10-05 08:00:00'
+    end_time: '2024-10-05 10:00:00'
+    ids : [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]
+    interval_seconds : 60
+    allowed_values : {
+          "1": [0,1],
+          "2": [0,1],
+          "3": [0,1],
+          "4": [0,1],
+          "5": [0,1],
+          "6": [0,1],
+          "7": [0,1],
+          "8": [0,1],
+          "9": [0,1],
+          "10": [0,1],
+          "p_Up": [0,1]
+                    }
+    f_min_value : 10.0
+    f_max_value : 100.0
+    i_min_value : 10.0
+    i_max_value : 100.0
