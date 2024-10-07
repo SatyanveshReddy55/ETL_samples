@@ -42,11 +42,11 @@ def setup():
     hist_event_input = hist_event_input.head(-1)
     trigger_event_data = hist_event_input.tail(1)
     # Read plant conditions config
-    plant_config = pl.read_json(os.path.join(os.getcwd(), "../tests/test_data/plantConfig.json"))
-    eventtype2_data = pl.read_json(os.path.join(os.getcwd(), "../tests/test_data/mock_eventtype2_data.json"))
+    plant_config = pl.read_json(os.path.join(os.getcwd(), "../function_app_tests/test_data/plantConfig.json"))
+    eventtype2_data = pl.read_json(os.path.join(os.getcwd(), "../function_app_tests/test_data/mock_eventtype2_data.json"))
 
     # Read mock input for two days
-    hist_event_input_two_days = pl.read_json(os.path.join(os.getcwd(), "../tests/test_data/mock_two_days_data.json"))
+    hist_event_input_two_days = pl.read_json(os.path.join(os.getcwd(), "../function_app_tests/test_data/mock_two_days_data.json"))
     #get event and historical data
     hist_event_input_two_days = hist_event_input_two_days.head(-1)
     trigger_event_data_two_days = hist_event_input_two_days.tail(1)
